@@ -52,7 +52,13 @@ def main():
         
         objSoup = bs4.BeautifulSoup(htmlfile.text, 'lxml') #將html轉成BeautifulSoup物件
 
-        
+        try:
+          #種類: 招式 == 寶可夢卡/ 寶可夢道具/ 物品卡/ 支援者卡/ 競技場卡/ 基本能量卡/ 特殊能量卡
+          種類 = objSoup.find('h3', class_ ="commonHeader").text
+        except: 
+            種類 = "Error"
+        else:
+             種類 = remove_spaces_and_tag(種類) #清除資料前後的空格和換行標記
 
 
 
