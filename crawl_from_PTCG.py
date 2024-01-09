@@ -5,6 +5,12 @@
 
 import requests, bs4, re, csv
 
+def remove_spaces_and_tag(blank_word):
+    blank_word = blank_word.strip()
+    blank_word = blank_word.strip("\n")
+    return blank_word
+
+
 class Card:
     def __init__(self, webpage_No, Handle, 卡名, 彈數, 編號, 種類, 對戰標記, 卡圖連結):
         self.webpage_No = webpage_No
@@ -51,15 +57,16 @@ def main():
             continue #提早結束迴圈，繼續執行下一次迴圈
         
         objSoup = bs4.BeautifulSoup(htmlfile.text, 'lxml') #將html轉成BeautifulSoup物件
-
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        #種類:用作判斷卡片種類
         try:
           #種類: 招式 == 寶可夢卡/ 寶可夢道具/ 物品卡/ 支援者卡/ 競技場卡/ 基本能量卡/ 特殊能量卡
           種類 = objSoup.find('h3', class_ ="commonHeader").text
         except: 
             種類 = "Error"
         else:
-             種類 = remove_spaces_and_tag(種類) #清除資料前後的空格和換行標記
-
+            種類 = remove_spaces_and_tag(種類) #清除資料前後的空格和換行標記
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 main()
