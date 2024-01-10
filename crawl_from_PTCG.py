@@ -10,7 +10,6 @@ def remove_spaces_and_tag(blank_word):
     blank_word = blank_word.strip("\n")
     return blank_word
 
-
 class Card:
     def __init__(self, webpage_No, Handle, 卡名, 彈數, 編號, 種類, 對戰標記, 卡圖連結):
         self.webpage_No = webpage_No
@@ -57,8 +56,7 @@ def main():
             continue #提早結束迴圈，繼續執行下一次迴圈
         
         objSoup = bs4.BeautifulSoup(htmlfile.text, 'lxml') #將html轉成BeautifulSoup物件
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        #種類:用作判斷卡片種類
+
         try:
           #種類: 招式 == 寶可夢卡/ 寶可夢道具/ 物品卡/ 支援者卡/ 競技場卡/ 基本能量卡/ 特殊能量卡
           種類 = objSoup.find('h3', class_ ="commonHeader").text
@@ -66,7 +64,54 @@ def main():
             種類 = "Error"
         else:
             種類 = remove_spaces_and_tag(種類) #清除資料前後的空格和換行標記
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            if 種類 == "基本能量卡": #討論是否不需要保存基本能量卡資料。結論：不需要
+                continue #提早結束迴圈，繼續執行下一次迴圈
+            elif 種類 == "招式": 
+                種類 = "寶可夢卡"
+            #種類完成
+        
+        卡名 = objSoup.find('li', class_ ="current").text
+        卡名 = remove_spaces_and_tag(卡名) #清除資料前後的空格和換行標記
+        if 卡名 == "1":
+            卡名 = 'Error'
+        #卡名完成
+        
+        #討論係咪要卡圖？ (要)
+        try:
+            linkTag = objSoup.select("section.imageColumn img") #提取卡圖連結的 HTML Tag
+        except:
+            卡圖連結 = "Error"
+        else: 
+            for link in linkTag:
+                卡圖連結 = link.get('src') #從 HTML Tag 提取卡圖連結
+        #卡圖連結完成
+        
+        #討論需不需要對戰標記？ (Hold up this part first, need some time to understand the old code)
+        
+        #下面係彈數＋編號
+        #彈數
+        try:
+            linkTag = objSoup.select("section.expansionLinkColumn a") #提取擴充包角標連結的 HTML Tag
+        except:
+            彈數 = "Error"
+        else: 
+            for link in linkTag:
+                彈數 = link.get('href') #從 HTML Tag 提取擴充包角標連結
+                彈數 = re.sub(r'^.*?=', '', 彈數, 0) #利用正則表達式清除多餘部分
+
+        #編號
+        try:
+            編號 = objSoup.find('span', class_ ="collectorNumber").text
+        except:
+            編號 = "Error"
+        else:
+            編號 = remove_spaces_and_tag(編號)
+            編號 = re.sub(r'/.*?$', '', 編號, 0) #清除 / 後所有字, eg: '090/190' => '090'。 討論需不需要清除前置0？
+            編號 = re.sub(r'^0', '', 編號, 0) #清除前置0
+            編號 = re.sub(r'^0', '', 編號, 0) #清除前置0      
+
+        #産品標籤（標籤）： 支持自動加入到篩選條件分組
+        #産品標籤包含： 遊戲名稱（PTCG）、卡片種類、彈數、對戰標記
 
 
 main()
