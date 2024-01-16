@@ -7,6 +7,8 @@ Progress: Code built. Simple test is done.
 Future work: A test based on Whole set of cards. (e.g. sv4a / SV5)
 
 Also, complete Code improve below to improve code maintenance and code line reusability.  
+Code improve should build another branch to do it. 
+Merch this branch after sv4a test is complete. 
 
 After this future, Merge of Main branch is ready. 
 
