@@ -1,3 +1,4 @@
+#PTCG 官網卡片爬蟲
 #This program is to crawl the data from PTCG TC website
 #Data that we need: webpage_No, Handle, 卡名, 彈數, 編號, 種類, 對戰標記, 卡圖連結
 #After crawling, we need to save the data into a csv file preassigned by Shopify
