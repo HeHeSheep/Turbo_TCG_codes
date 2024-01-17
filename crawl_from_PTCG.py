@@ -10,79 +10,6 @@ def remove_spaces_and_tag(blank_word):
     blank_word = blank_word.strip("\n")
     return blank_word
 
-# class Card:
-#     def __init__(self, webpage_No, Handle, 卡名, 彈數, 編號, 種類, 對戰標記, 卡圖連結):
-#         self.webpage_No = webpage_No
-#         self.Handle = Handle
-#         self.卡名 = 卡名
-#         self.彈數 = 彈數
-#         self.編號 = 編號
-#         self.種類 = 種類
-#         self.對戰標記 = 對戰標記
-#         self.卡圖連結 = 卡圖連結
-
-#     def __str__(self):
-#         return self.webpage_No + ',' + self.Handle + ',' + self.卡名 + ',' + self.彈數 + ',' + self.編號 + ',' + self.種類 + ',' + self.對戰標記 + ',' + self.卡圖連結
-
-#     def __repr__(self):
-#         return self.webpage_No + ',' + self.Handle + ',' + self.卡名 + ',' + self.彈數 + ',' + self.編號 + ',' + self.種類 + ',' + self.對戰標記 + ',' + self.卡圖連結
-
-# class Card:
-#     def __init__(self, handle, title, body_html, vendor, product_category, type, tags, published, option1_name, option1_value, option2_name, option2_value, option3_name, option3_value, variant_sku, variant_grams, variant_inventory_tracker, variant_inventory_qty, variant_inventory_policy, variant_fulfillment_service, variant_price, variant_compare_at_price, variant_requires_shipping, variant_taxable, variant_barcode, image_src, image_position, image_alt_text, gift_card, seo_title, seo_description, google_shopping_google_product_category, google_shopping_gender, google_shopping_age_group, google_shopping_mpn, google_shopping_condition, google_shopping_custom_product, google_shopping_custom_label_0, google_shopping_custom_label_1, google_shopping_custom_label_2, google_shopping_custom_label_3, google_shopping_custom_label_4, variant_image, variant_weight_unit, variant_tax_code, cost_per_item, included_中國香港特別行政區, price_中國香港特別行政區, compare_at_price_中國香港特別行政區, included_國際, price_國際, compare_at_price_國際, status):
-#         self.handle = handle
-#         self.title = title
-#         self.body_html = body_html
-#         self.vendor = vendor
-#         self.product_category = product_category
-#         self.type = type
-#         self.tags = tags
-#         self.published = published
-#         self.option1_name = option1_name
-#         self.option1_value = option1_value
-#         self.option2_name = option2_name
-#         self.option2_value = option2_value
-#         self.option3_name = option3_name
-#         self.option3_value = option3_value
-#         self.variant_sku = variant_sku
-#         self.variant_grams = variant_grams
-#         self.variant_inventory_tracker = variant_inventory_tracker
-#         self.variant_inventory_qty = variant_inventory_qty
-#         self.variant_inventory_policy = variant_inventory_policy
-#         self.variant_fulfillment_service = variant_fulfillment_service
-#         self.variant_price = variant_price
-#         self.variant_compare_at_price = variant_compare_at_price
-#         self.variant_requires_shipping = variant_requires_shipping
-#         self.variant_taxable = variant_taxable
-#         self.variant_barcode = variant_barcode
-#         self.image_src = image_src
-#         self.image_position = image_position
-#         self.image_alt_text = image_alt_text
-#         self.gift_card = gift_card
-#         self.seo_title = seo_title
-#         self.seo_description = seo_description
-#         self.google_shopping_google_product_category = google_shopping_google_product_category
-#         self.google_shopping_gender = google_shopping_gender
-#         self.google_shopping_age_group = google_shopping_age_group
-#         self.google_shopping_mpn = google_shopping_mpn
-#         self.google_shopping_condition = google_shopping_condition
-#         self.google_shopping_custom_product = google_shopping_custom_product
-#         self.google_shopping_custom_label_0 = google_shopping_custom_label_0
-#         self.google_shopping_custom_label_1 = google_shopping_custom_label_1
-#         self.google_shopping_custom_label_2 = google_shopping_custom_label_2
-#         self.google_shopping_custom_label_3 = google_shopping_custom_label_3
-#         self.google_shopping_custom_label_4 = google_shopping_custom_label_4
-#         self.variant_image = variant_image
-#         self.variant_weight_unit = variant_weight_unit
-#         self.variant_tax_code = variant_tax_code
-#         self.cost_per_item = cost_per_item
-#         self.included_中國香港特別行政區 = included_中國香港特別行政區
-#         self.price_中國香港特別行政區 = price_中國香港特別行政區
-#         self.compare_at_price_中國香港特別行政區 = compare_at_price_中國香港特別行政區
-#         self.included_國際 = included_國際
-#         self.price_國際 = price_國際
-#         self.compare_at_price_國際 = compare_at_price_國際
-#         self.status = status
-
 def main():
     webpage_No_start = int(input("請輸入起始卡片網頁編號")) #輸入起始卡片網頁編號
     webpage_No_end = int(input("請輸入結尾卡片網頁編號")) #輸入結尾卡片網頁編號
@@ -93,13 +20,7 @@ def main():
     csvWriter = csv.writer(csvFile)
     #initial the csv file as Shopify required
     #Values in class are located in .csv at:
-    # Handle = Handle 用途：商品名稱，多種同卡名卡片會共用同一個Handle e.g.高級球
-    # 卡名 = Title 用途：商品名稱，一個Handle只有一個Title e.g.高級球
-    # 彈數 = 
-    # 編號 = 
-    # 種類 = 
-    # 對戰標記 = 
-    # 卡圖連結 = 
+
     csvWriter.writerow(['Handle', 'Title', 'Body (HTML)', 'Vendor', 'Product Category', 'Type', 'Tags', 'Published', 'Option1 Name', 'Option1 Value', 'Option2 Name', 'Option2 Value', 'Option3 Name', 'Option3 Value', 'Variant SKU', 'Variant Grams', 'Variant Inventory Tracker', 'Variant Inventory Qty', 'Variant Inventory Policy', 'Variant Fulfillment Service', 'Variant Price', 'Variant Compare At Price', 'Variant Requires Shipping', 'Variant Taxable', 'Variant Barcode', 'Image Src', 'Image Position', 'Image Alt Text', 'Gift Card', 'SEO Title', 'SEO Description', 'Google Shopping / Google Product Category', 'Google Shopping / Gender', 'Google Shopping / Age Group', 'Google Shopping / MPN', 'Google Shopping / Condition', 'Google Shopping / Custom Product', 'Google Shopping / Custom Label 0', 'Google Shopping / Custom Label 1', 'Google Shopping / Custom Label 2', 'Google Shopping / Custom Label 3', 'Google Shopping / Custom Label 4', 'Variant Image', 'Variant Weight Unit', 'Variant Tax Code', 'Cost per item', 'Included / 中國香港特別行政區', 'Price / 中國香港特別行政區', 'Compare At Price / 中國香港特別行政區', 'Included / 國際', 'Price / 國際', 'Compare At Price / 國際', 'Status'])
     #上面這行是設定csv檔的第一行，也就是每一個欄位的名稱，這邊是參考Shopify的csv檔格式
     #initial complete, start crawling in for loop below.
@@ -174,23 +95,23 @@ def main():
                 彈數 = link.get('href') #從 HTML Tag 提取擴充包角標連結
                 彈數 = re.sub(r'^.*?=', '', 彈數, 0) #利用正則表達式清除多餘部分
 
-        #編號
-        # try:
-        #     編號 = objSoup.find('span', class_ ="collectorNumber").text
-        # except:
-        #     編號 = "Error"
-        # else:
-        #     編號 = remove_spaces_and_tag(編號)
-        #     編號 = re.sub(r'/.*?$', '', 編號, 0) #清除 / 後所有字, eg: '090/190' => '090'。 討論需不需要清除前置0？
-        #     編號 = re.sub(r'^0', '', 編號, 0) #清除前置0
-        #     編號 = re.sub(r'^0', '', 編號, 0) #清除前置0      
+        #編號：用作支撐Handle 的唯一性。
+        try:
+            編號 = objSoup.find('span', class_ ="collectorNumber").text
+        except:
+            編號 = "Error"
+        else:
+            編號 = remove_spaces_and_tag(編號)
+            編號 = re.sub(r'/.*?$', '', 編號, 0) #清除 / 後所有字, eg: '090/190' => '090'。 討論需不需要清除前置0？
+            # 編號 = re.sub(r'^0', '', 編號, 0) #清除前置0
+            編號 = re.sub(r'^0', '', 編號, 0) #清除前置0      
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         #産品標籤（標籤）： 支持自動加入到篩選條件分組
         #産品標籤包含： 遊戲名稱（PTCG）、卡片種類(e.g.:寶可夢卡)、彈數(e.g.: SV4a)、對戰標記(e.g.:F)
         産品標籤 = "PTCG, " + 種類 + ", " + 彈數 + ", " + 對戰標記
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        #Handle
-        Handle = 卡名 + " (" + 彈數 + ")"
+        #Handle 例子：高級球(sv4a)
+        Handle = 卡名 + " (" + 彈數 + "_" + 編號 + ")"
         #Handle完成
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         #Error checking
