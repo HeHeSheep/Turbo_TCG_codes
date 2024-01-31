@@ -9,7 +9,6 @@ PTCG 官網卡片爬取
 
 
 
-    
 -----------------Below is English version-----------------  
 This repository contains codes for making csv files for updating products on Shopify of 
 Turbo TCG.  
