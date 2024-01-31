@@ -1,8 +1,8 @@
 # Turbo_TCG_codes
 這是用作Turbo TCG 的代碼庫。  
 ## 正在進行
-PTCG 官網卡片爬取  
-    現在已完成source code, 之後會嘗試packaging  
+PTCG 官網卡片爬取
+>>現在已完成source code, 之後會嘗試packaging  
 
 ## 未來計劃  
 計劃中：1. 參考BottleNeko 以及PTCG官網卡組編輯器，製作碧藍航線TCG卡組編輯器
