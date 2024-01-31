@@ -13,6 +13,8 @@ Merch this branch after sv4a test is complete.
 After this future, Merge of Main branch is ready. 
 
 Code improve:
+
+    0. If needed to sell it, need to add a part to define download path / adjust the related path
     1. Add part to capture HTML block for card description.
     2. Using an array to store card information.
     3. Array can be used to print repeatedly with while/for loop. 
