@@ -1,7 +1,7 @@
 # Turbo_TCG_codes
 這是給Turbo TCG 使用的代碼庫。  
 ## 正在進行
-[PTCG 官網卡片爬取]  (https://github.com/HeHeSheep/Turbo_TCG_codes/blob/6be9f8e03a966ea5dd5879f339e1aa07dd7f9e76/crawl_from_PTCG/PTCG_Crawl_README.md)
+[PTCG 官網卡片爬取](https://github.com/HeHeSheep/Turbo_TCG_codes/blob/6be9f8e03a966ea5dd5879f339e1aa07dd7f9e76/crawl_from_PTCG/PTCG_Crawl_README.md)
 
     - 現在已完成source code, 之後會嘗試packaging  
 
