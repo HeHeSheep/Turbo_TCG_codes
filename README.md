@@ -5,13 +5,12 @@ PTCG 官網卡片爬取
 >>現在已完成source code, 之後會嘗試packaging  
 
 ## 未來計劃  
-<pre>
-計劃中：1. 參考BottleNeko 以及PTCG官網卡組編輯器，製作碧藍航線TCG卡組編輯器
 
+計劃中：1. 參考BottleNeko 以及PTCG官網卡組編輯器，製作碧藍航線TCG卡組編輯器
+&nbsp;
 -----------------Below is English version-----------------  
 This repository contains codes for making csv files for updating products on Shopify of 
 Turbo TCG.  
 
 Now PTCG HK web crawl is making,  
 and other card games and accessories are not in schedule.
-</pre>
