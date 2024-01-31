@@ -7,8 +7,6 @@ PTCG 官網卡片爬取
 ## 未來計劃  
 計劃中：1. 參考BottleNeko 以及PTCG官網卡組編輯器，製作碧藍航線TCG卡組編輯器
 
-
-
 -----------------Below is English version-----------------  
 This repository contains codes for making csv files for updating products on Shopify of 
 Turbo TCG.  
