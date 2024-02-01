@@ -6,7 +6,6 @@
 
 import requests, bs4, re, csv
 
-
 def remove_spaces_and_tag(blank_word):
     blank_word = blank_word.strip()
     blank_word = blank_word.strip("\n")
