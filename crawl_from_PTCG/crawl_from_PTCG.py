@@ -6,6 +6,7 @@
 
 import requests, bs4, re, csv
 
+
 def remove_spaces_and_tag(blank_word):
     blank_word = blank_word.strip()
     blank_word = blank_word.strip("\n")
@@ -35,6 +36,8 @@ def main():
             continue #提早結束迴圈，繼續執行下一次迴圈
         
         objSoup = bs4.BeautifulSoup(htmlfile.text, 'lxml') #將html轉成BeautifulSoup物件
+        if objSoup.find('title').text == "卡牌搜尋結果 | 訓練家網站":
+            continue #提早結束迴圈，繼續執行下一次迴圈
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         try:
           #種類: 招式 == 寶可夢卡/ 寶可夢道具/ 物品卡/ 支援者卡/ 競技場卡/ 基本能量卡/ 特殊能量卡
