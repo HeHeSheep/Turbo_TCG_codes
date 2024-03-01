@@ -4,6 +4,10 @@
 # After crawling, we need to save the data into a csv file preassigned by Shopify
 # 為每一個獨立編號卡片設定一個商品編號
 # 專門設計：Shopify .csv,
+# Creator: Chin Tsz Yeung
+# Email: oscarcty@gmail.com
+# Discord: hehesheep
+
 import os.path
 
 import requests, bs4, re, csv
