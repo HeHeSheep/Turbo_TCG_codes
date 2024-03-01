@@ -16,6 +16,8 @@ def remove_spaces_and_tag(blank_word):
 
 
 def main():
+    print("歡迎使用PTCG 官網卡片爬蟲")
+    print("資料來源：https://asia.pokemon-card.com/hk/")
     webpage_No_start = int(input("請輸入起始卡片網頁編號"))  # 輸入起始卡片網頁編號
     webpage_No_end = int(input("請輸入結尾卡片網頁編號"))  # 輸入結尾卡片網頁編號
 
