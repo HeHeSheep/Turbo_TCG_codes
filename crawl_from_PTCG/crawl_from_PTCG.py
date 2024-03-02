@@ -3,7 +3,7 @@
 # Data that we need: webpage_No, Handle, 卡名, 彈數, 編號, 種類, 對戰標記, 卡圖連結
 # After crawling, we need to save the data into a csv file preassigned by Shopify
 # 為每一個獨立編號卡片設定一個商品編號
-# 專門設計：Shopify .csv,
+# 專門設計：Shopify, PTCG
 # Creator: Chin Tsz Yeung
 # Email: oscarcty@gmail.com
 # Discord: hehesheep
