@@ -18,10 +18,10 @@ Main branch 僅用作保存最穩定版本。</br>
 ## 已完成
 [PTCG 官網卡片爬取](https://github.com/HeHeSheep/Turbo_TCG_codes/blob/6be9f8e03a966ea5dd5879f339e1aa07dd7f9e76/crawl_from_PTCG/PTCG_Crawl_README.md)
 
-    - 已成功制作 .exe application, stored in crawl_from_PTCG/dist
-    - 惟使用時需要管理員權限，否則無法存取 Downloads 資料夾。
-    - Packaging 時可加入 --manifest 去彈出管理員權限請求。
-    - 詳情參考 Github Copilot 的相關回答。[GitHub Copilot 的回答](https://github.com/HeHeSheep/Turbo_TCG_codes/blob/main/crawl_from_PTCG/Reply_from_Github_Copilot_about_--manifest.md)
+已成功制作 .exe application, stored in crawl_from_PTCG/dist
+惟使用時需要管理員權限，否則無法存取 Downloads 資料夾。
+Packaging 時可加入 --manifest 去彈出管理員權限請求。
+詳情參考 GitHub Copilot 的相關回答。[GitHub Copilot 的回答](https://github.com/HeHeSheep/Turbo_TCG_codes/blob/main/crawl_from_PTCG/Reply_from_Github_Copilot_about_--manifest.md)
 -----------------Below is English version-----------------  
 This repository contains codes for making csv files for updating products on Shopify of 
 Turbo TCG.  
