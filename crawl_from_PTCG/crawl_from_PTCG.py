@@ -4,41 +4,57 @@
 # After crawling, we need to save the data into a csv file preassigned by Shopify
 # 為每一個獨立編號卡片設定一個商品編號
 # 專門設計：Shopify .csv,
+# Creator: Chin Tsz Yeung
+# Email: oscarcty@gmail.com
+# Discord: hehesheep
 
+import os.path
 
 import requests, bs4, re, csv
+
 
 def remove_spaces_and_tag(blank_word):
     blank_word = blank_word.strip()
     blank_word = blank_word.strip("\n")
     return blank_word
 
-def main():
-    webpage_No_start = int(input("請輸入起始卡片網頁編號"))  # 輸入起始卡片網頁編號
-    webpage_No_end = int(input("請輸入結尾卡片網頁編號"))  # 輸入結尾卡片網頁編號
 
-    #Create a csv file
-    #Before using this program, please change the path of the csv file at line 92
-    csvFile = open("/Users/Yeung/Downloads/PTCG_data " + str(webpage_No_start) +" to " +str(webpage_No_end) + ".csv", 'w', newline = '', encoding= 'UTF-8') 
+def main():
+    print("歡迎使用PTCG 官網卡片爬蟲")
+    print("資料來源：https://asia.pokemon-card.com/hk/")
+    print("請輸入起始卡片網頁編號")
+    print("例子：https://asia.pokemon-card.com/hk/card-search/detail/1/")
+    webpage_No_start = int(input("1 為卡片網頁編號："))  # 輸入起始卡片網頁編號
+    print("請輸入結尾卡片網頁編號")
+    print("例子：https://asia.pokemon-card.com/hk/card-search/detail/100/")
+    webpage_No_end = int(input("100 為卡片網頁編號："))  # 輸入結尾卡片網頁編號
+
+    # Create a csv file
+
+    home_dir = os.path.expanduser("~")
+    downloads_dir = os.path.join(home_dir, "Downloads")
+    csv_file_name = "PTCG_card " + str(webpage_No_start) + " to " +str(webpage_No_end) + ".csv"
+    csv_file_path = os.path.join(downloads_dir, csv_file_name)
+    csvFile = open(csv_file_path, 'w', newline='', encoding='UTF-8')
     csvWriter = csv.writer(csvFile)
-    #initial the csv file as Shopify required
-    #Values in class are located in .csv at:
+    # initial the csv file as Shopify required
+    # Values in class are located in .csv at:
 
     csvWriter.writerow(['Handle', 'Title', 'Body (HTML)', 'Vendor', 'Product Category', 'Type', 'Tags', 'Published', 'Option1 Name', 'Option1 Value', 'Option2 Name', 'Option2 Value', 'Option3 Name', 'Option3 Value', 'Variant SKU', 'Variant Grams', 'Variant Inventory Tracker', 'Variant Inventory Qty', 'Variant Inventory Policy', 'Variant Fulfillment Service', 'Variant Price', 'Variant Compare At Price', 'Variant Requires Shipping', 'Variant Taxable', 'Variant Barcode', 'Image Src', 'Image Position', 'Image Alt Text', 'Gift Card', 'SEO Title', 'SEO Description', 'Google Shopping / Google Product Category', 'Google Shopping / Gender', 'Google Shopping / Age Group', 'Google Shopping / MPN', 'Google Shopping / Condition', 'Google Shopping / Custom Product', 'Google Shopping / Custom Label 0', 'Google Shopping / Custom Label 1', 'Google Shopping / Custom Label 2', 'Google Shopping / Custom Label 3', 'Google Shopping / Custom Label 4', 'Variant Image', 'Variant Weight Unit', 'Variant Tax Code', 'Cost per item', 'Included / 中國香港特別行政區', 'Price / 中國香港特別行政區', 'Compare At Price / 中國香港特別行政區', 'Included / 國際', 'Price / 國際', 'Compare At Price / 國際', 'Status'])
-    #上面這行是設定csv檔的第一行，也就是每一個欄位的名稱，這邊是參考Shopify的csv檔格式
-    #initial complete, start crawling in for loop below.
+    # 上面這行是設定csv檔的第一行，也就是每一個欄位的名稱，這邊是參考Shopify的csv檔格式
+    # initial complete, start crawling in for loop below.
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     for webpage_No_start in range(webpage_No_start, webpage_No_end + 1):
         url = "https://asia.pokemon-card.com/hk/card-search/detail/" + str(webpage_No_start) #url of the card
-        htmlfile = requests.get(url) #get the html file from the url
+        htmlfile = requests.get(url) # get the html file from the url
 
-        if htmlfile.status_code != 200: #check if the webpage is downloaded successfully
+        if htmlfile.status_code != 200: # check if the webpage is downloaded successfully
             csvWriter.writerow([webpage_No_start + "網頁下載失敗，狀態為:" + str(htmlfile.status_code)]) #記錄錯誤網頁編號
-            continue #提早結束迴圈，繼續執行下一次迴圈
+            continue  # 提早結束迴圈，繼續執行下一次迴圈
         
         objSoup = bs4.BeautifulSoup(htmlfile.text, 'lxml') #將html轉成BeautifulSoup物件
         if objSoup.find('title').text == "卡牌搜尋結果 | 訓練家網站":
-            continue #提早結束迴圈，繼續執行下一次迴圈
+            continue  # 提早結束迴圈，繼續執行下一次迴圈
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         try:
             # 種類: 招式 == 寶可夢卡/ 寶可夢道具/ 物品卡/ 支援者卡/ 競技場卡/ 基本能量卡/ 特殊能量卡
@@ -52,25 +68,25 @@ def main():
             elif 種類 == "招式": 
                 種類 = "寶可夢卡"
             # 種類完成
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------       
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         卡名 = objSoup.find('li', class_ ="current").text
-        卡名 = remove_spaces_and_tag(卡名) #清除資料前後的空格和換行標記
+        卡名 = remove_spaces_and_tag(卡名)  # 清除資料前後的空格和換行標記
         if 卡名 == "1":
             卡名 = 'Error'
-        #卡名完成
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        #skillInformation
+        # 卡名完成
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        # skillInformation
         cardInformationColumn = ""
-        #效果HTML提取，用作Body (HTML) by 洋
-        #呢度唔做住，能用就行，留待後人繼續努力 by 洋， 11/1/2024
+        # 效果HTML提取，用作Body (HTML) by 洋
+        # 呢度唔做住，能用就行，留待後人繼續努力 by 洋， 11/1/2024
         # try:
         #     cardInformationColumn = objSoup.find('div', class_ ="cardInformationColumn") #Receiving a BeautifulSoup object
         #     # skillInformation_html = str(skillInformation.prettify())  # 轉換BeautifulSoup object為字符串並格式化
         # except:
         #     cardInformationColumn = "Error"
-        #效果HTML提取完成
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
-        #討論係咪要卡圖？ (要)
+        # 效果HTML提取完成
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        # 討論係咪要卡圖？ (要)
         try:
             linkTag = objSoup.select("section.imageColumn img") #提取卡圖連結的 HTML Tag
         except:
@@ -78,10 +94,10 @@ def main():
         else: 
             for link in linkTag:
                 卡圖連結 = link.get('src') #從 HTML Tag 提取卡圖連結
-        #卡圖連結完成
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
-        #討論需不需要對戰標記？ (Hold up this part first, need some time to understand the old code)
-        #要，用作産品標籤 by 洋
+        # 卡圖連結完成
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        # 討論需不需要對戰標記？ (Hold up this part first, need some time to understand the old code)
+        # 要，用作産品標籤 by 洋
         try:
             對戰標記 = objSoup.find('span', class_ ="alpha").text
         except:
@@ -122,7 +138,7 @@ def main():
         # Error checking
         if 卡名 == 種類 == 對戰標記:
             continue
-        #Error checking完成
+        # Error checking完成
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         # 將資料寫入csv檔
         #                 'Handle', 'Title', 'Body (HTML)', 'Vendor', 'Product Category', 'Type', 'Tags', 'Published', 'Option1 Name', 'Option1 Value', 'Option2 Name', 'Option2 Value', 'Option3 Name', 'Option3 Value', 'Variant SKU', 'Variant Grams', 'Variant Inventory Tracker', 'Variant Inventory Qty', 'Variant Inventory Policy', 'Variant Fulfillment Service', 'Variant Price', 'Variant Compare At Price', 'Variant Requires Shipping', 'Variant Taxable', 'Variant Barcode', 'Image Src', 'Image Position', 'Image Alt Text', 'Gift Card', 'SEO Title', 'SEO Description', 'Google Shopping / Google Product Category', 'Google Shopping / Gender', 'Google Shopping / Age Group', 'Google Shopping / MPN', 'Google Shopping / Condition', 'Google Shopping / Custom Product', 'Google Shopping / Custom Label 0', 'Google Shopping / Custom Label 1', 'Google Shopping / Custom Label 2', 'Google Shopping / Custom Label 3', 'Google Shopping / Custom Label 4', 'Variant Image', 'Variant Weight Unit', 'Variant Tax Code', 'Cost per item', 'Included / 中國香港特別行政區', 'Price / 中國香港特別行政區', 'Compare At Price / 中國香港特別行政區', 'Included / 國際', 'Price / 國際', 'Compare At Price / 國際', 'Status'] 
@@ -131,7 +147,9 @@ def main():
         # one loop ends
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     csvFile.close()
-    print("全部資料下載完畢。")
-    #main() ends
+    print("全部資料下載完畢。.csv檔案在Downloads / 下載")
+    input("Press Enter to exit...")
+    # main() ends
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 main()
