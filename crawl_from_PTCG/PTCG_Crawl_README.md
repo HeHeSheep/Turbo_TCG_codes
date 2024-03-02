@@ -1,4 +1,4 @@
-# Turbo_TCG_codes
+# PTCG 官網卡片爬取
 
 This branch is to work for codes of PTCG crawler.
 
