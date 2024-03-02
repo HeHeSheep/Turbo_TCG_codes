@@ -1,7 +1,10 @@
 # Turbo_TCG_codes
 這是給Turbo TCG 使用的代碼庫。  
 ## 正在進行
-
+[WS 官網卡片爬取](https://github.com/HeHeSheep/Turbo_TCG_codes/blob/main/crawl_from_WS/crawl_from_WS_README.md)
+    
+    -尚未開始編寫代碼，但已有思路解決已知問題
+    -詳情請閱讀相關.md文件。    
 
 ## 未來計劃  
 
