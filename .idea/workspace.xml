@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="Update content" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="PTCG_crawl_improve_for_Yeung" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "HeHeSheep"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="cbcb62e4-169b-4885-b217-6ed25bc4e964" />
+        <option name="url" value="https://github.com/HeHeSheep/Turbo_TCG_codes.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2d648hshVJDAV3RVPOL8NWlR9eP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.crawl_from_PTCG.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.customizations",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="" />
+      <created>1709315036892</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709315036892</updated>
+      <workItem from="1709315038171" duration="7929000" />
+      <workItem from="1709328619814" duration="645000" />
+      <workItem from="1709403233402" duration="7135000" />
+    </task>
+    <task id="LOCAL-00001" summary="Set path for .csv file at user Downloads">
+      <option name="closed" value="true" />
+      <created>1709318946572</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709318946572</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding introduction of the program">
+      <option name="closed" value="true" />
+      <created>1709319138925</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709319138925</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Packaging everthing into a .exe">
+      <option name="closed" value="true" />
+      <created>1709328319649</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709328319649</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Rename .exe">
+      <option name="closed" value="true" />
+      <created>1709328583772</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709328583772</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update README.md">
+      <option name="closed" value="true" />
+      <created>1709328778586</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709328778586</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Adding personal info in .py">
+      <option name="closed" value="true" />
+      <created>1709328992101</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709328992101</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update READ.md">
+      <option name="closed" value="true" />
+      <created>1709329071601</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709329071601</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Initial WS thing">
+      <option name="closed" value="true" />
+      <created>1709407524235</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709407524235</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Renew Heading comment">
+      <option name="closed" value="true" />
+      <created>1709407551557</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709407551557</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Save replies from Github Copilot">
+      <option name="closed" value="true" />
+      <created>1709408515685</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709408515685</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Renew Main README.md">
+      <option name="closed" value="true" />
+      <created>1709412309561</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709412309561</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Rename Headings of the .md">
+      <option name="closed" value="true" />
+      <created>1709413147075</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709413147075</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Update content">
+      <option name="closed" value="true" />
+      <created>1709413387969</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709413387969</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Set path for .csv file at user Downloads" />
+    <MESSAGE value="Adding introduction of the program" />
+    <MESSAGE value="Packaging everthing into a .exe" />
+    <MESSAGE value="Rename .exe" />
+    <MESSAGE value="Update README.md" />
+    <MESSAGE value="Adding personal info in .py" />
+    <MESSAGE value="Update READ.md" />
+    <MESSAGE value="Initial WS thing" />
+    <MESSAGE value="Renew Heading comment" />
+    <MESSAGE value="Save replies from Github Copilot" />
+    <MESSAGE value="Renew Main README.md" />
+    <MESSAGE value="Rename Headings of the .md" />
+    <MESSAGE value="Update content" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update content" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Turbo_TCG_codes$crawl_from_PTCG.coverage" NAME="crawl_from_PTCG Coverage Results" MODIFIED="1709403780000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawl_from_PTCG" />
+  </component>
+</project>
