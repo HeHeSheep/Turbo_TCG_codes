@@ -5,7 +5,7 @@
 
 # Data specification:
 # Target User: TopDraw.
-# Target .csv template: Shopline.
+# Target .csv template: ShopLine.
 # Data that we need: Wait for TopDraw assign.
 
 
@@ -28,6 +28,11 @@ import csv
 
 
 def main():
+    print("歡迎使用WS 官網卡片爬蟲")
+    print("POS .csv 模板：ShopLine")
+    print("資料來源：https://ws-tcg.com/")
+    print("")
+
     return 0
 
 
