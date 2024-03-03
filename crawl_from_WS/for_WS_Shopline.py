@@ -31,7 +31,8 @@ def main():
     print("歡迎使用WS 官網卡片爬蟲")
     print("POS .csv 模板：ShopLine")
     print("資料來源：https://ws-tcg.com/")
-    print("")
+    print("單卡例子：https://ws-tcg.com/cardlist/?cardno=SFN/S108-T01R")
+    print("系列：SFN","黑白方：S","系列數：108","商品類別：T","編號：01","稀有度：R")
 
     return 0
 
