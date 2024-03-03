@@ -25,16 +25,35 @@ import requests
 import bs4
 import re
 import csv
+import re
 
 
 def write_line_into_csv_shopline():
 
+    return 0
+
 
 def main():
+# Define Constant
+    pattern = r'^(.+)/(W|S)(E?)([0-9]+)-([0-9+])$'
+
     print("歡迎使用WS 官網卡片爬蟲")
     print("POS .csv 模板：ShopLine")
     print("資料來源：https://ws-tcg.com/")
-    print("")
+    print("請輸入目標彈數第一張卡")
+
+    set_no = ""
+    while(True):
+    # 加入Regex 檢查輸入是否正確
+        set_no = input("例子：PJS/S109-113")
+        if re.match(pattern, set_no):
+            break
+        else:
+            # 睇下之後有冇時間加function 去解䆁點解not match.
+            print("輸入不符合要求，請重新輸入。")
+    # Maybe need a sample output for first card.
+    # As there have no way for me to check whether
+
 
     return 0
 
