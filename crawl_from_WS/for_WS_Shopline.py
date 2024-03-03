@@ -27,6 +27,9 @@ import re
 import csv
 
 
+def write_line_into_csv_shopline():
+
+
 def main():
     print("歡迎使用WS 官網卡片爬蟲")
     print("POS .csv 模板：ShopLine")
