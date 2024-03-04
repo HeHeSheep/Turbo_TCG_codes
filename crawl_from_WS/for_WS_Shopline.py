@@ -35,6 +35,7 @@ def main():
     print("系列：SFN","黑白方：S","系列數：108","商品類別：T","編號：01","稀有度：R")
 
     return 0
-
+    input("Press Enter to exit...")
+    # main() ends
 
 main()
