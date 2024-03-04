@@ -23,7 +23,6 @@
 import os.path
 import requests
 import bs4
-import re
 import csv
 import re
 class card_info:
