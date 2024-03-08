@@ -9,6 +9,7 @@ Progress: Nothing have done.
 所以喺 for loop 入面，要攞埋下一頁嘅link 去作為下一次 loop 嘅目標網址。
 
 要加個 fetch 單卡嘅功能，現時只有成set fetch。
+反正都冇得用數字loop，索性叫user一開始就入晒成條網址，跟住叫佢揀一張/全部/PR only (if possible)
 
 Until: 攞唔到網址 / 攞到指定 HTML Tag 就停
 (可能可以用 try / except 去加速)
