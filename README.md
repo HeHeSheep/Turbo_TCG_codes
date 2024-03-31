@@ -11,7 +11,13 @@ Main branch 僅用作保存最穩定版本。</br>
 
 ## 未來計劃  
 
-計劃中：1. 參考BottleNeko 以及PTCG官網卡組編輯器，製作碧藍航線TCG卡組編輯器
+計劃中：
+
+1. 一個用作報分用途嘅網站，可支持用戶註冊，線上報分。Event Organizer (EO) 可以使用後台帳戶開比賽，出Pairing，etc...</br>
+(有機會有水路哦)</br>
+    [報分網]()
+    
+2. 參考BottleNeko 以及PTCG官網卡組編輯器，製作碧藍航線TCG卡組編輯器
 <br />
 <br />
 
