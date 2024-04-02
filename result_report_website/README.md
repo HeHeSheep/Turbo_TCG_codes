@@ -6,7 +6,8 @@ For backend, mySQL / use XAMPP is needed.
 If need to test, run service on NAS (or sth like local env). 
 If really in use, put it on AWS / cloud service.
 
-Step 1, design static FrontEnd Template.
+Step 1, design static FrontEnd Template. (Completed)
+Step 1.5, write .js file
 Step 2, setting Backend Env. 
 Step 3, use JavaScript to link Front End and BackEnd server
 Step 4, 
