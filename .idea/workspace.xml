@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="Create new file" />
+    <list default="true" id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="feat: Simple Pairing Checking page is done.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/pairing_content_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/pairing_content_page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/pairing_content_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/pairing_content_page.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="PTCG_crawl_improve_for_Yeung" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,14 +76,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "result__report__website",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -95,6 +99,7 @@
       <workItem from="1709328619814" duration="645000" />
       <workItem from="1709403233402" duration="7135000" />
       <workItem from="1712082806438" duration="258000" />
+      <workItem from="1712083074494" duration="1554000" />
     </task>
     <task id="LOCAL-00001" summary="Set path for .csv file at user Downloads">
       <option name="closed" value="true" />
@@ -216,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712081884100</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="style: Rename folders.">
+      <option name="closed" value="true" />
+      <created>1712083128596</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712083128596</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +252,9 @@
     <MESSAGE value="Update new feature requirement." />
     <MESSAGE value="Update content" />
     <MESSAGE value="Create new file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create new file" />
+    <MESSAGE value="style: Rename folders." />
+    <MESSAGE value="feat: Simple Pairing Checking page is done." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Simple Pairing Checking page is done." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Turbo_TCG_codes$crawl_from_PTCG.coverage" NAME="crawl_from_PTCG Coverage Results" MODIFIED="1709403780000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawl_from_PTCG" />
