@@ -5,7 +5,7 @@
 
 # Data specification:
 # Target User: TopDraw.
-# Target .csv template: Shopline.
+# Target .csv template: ShopLine.
 # Data that we need: Wait for TopDraw assign.
 
 
@@ -28,7 +28,16 @@ import csv
 
 
 def main():
-    return 0
+    print("歡迎使用WS 官網卡片爬蟲")
+    print("POS .csv 模板：ShopLine")
+    print("資料來源：https://ws-tcg.com/")
+    print("單卡例子：https://ws-tcg.com/cardlist/?cardno=SFN/S108-T01R")
+    print("系列：SFN","黑白方：S","系列數：108","商品類別：T","編號：01","稀有度：R")
+    print("請輸入系列")
+    webpage_series = int(input(SFN為系列：))
 
+    return 0
+    input("Press Enter to exit...")
+    # main() ends
 
 main()
