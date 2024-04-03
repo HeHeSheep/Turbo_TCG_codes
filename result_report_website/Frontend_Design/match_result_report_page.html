@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="css/match_result_report_page.css">
 <head>
     <meta charset="UTF-8">
     <title>Result Upload of Table 1</title>
+    <link rel="stylesheet" type="text/css" href="css/match_result_report_page.css">
 </head>
 <body>
     <div class="container">
@@ -20,6 +20,7 @@
                 <td>
                     <label>
                         <select name="result_choices">
+                            <option value="NULL">----------</option>
                             <option value="you_win">You WIN</option>
                             <option value="double_defeated">You Loss (Double Defeated)</option>
                         </select>
@@ -28,10 +29,11 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="submit" value="Submit">
+                    <input type="submit" id="submit_button" value="Submit">
                 </td>
             </tr>
         </table>
     </div>
+    <script src="JavaScript/match_result_report_page.js"></script>
 </body>
 </html>
