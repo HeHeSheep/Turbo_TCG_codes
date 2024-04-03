@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="feat: Making simple outline of match_result_report_page&#10;&#10;All necessary HTML element are included.&#10;But need .js to support their features.">
-      <change afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/css/match_result_report_page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/match_result_report_page.html" afterDir="false" />
+    <list default="true" id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="docs: Update progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/pairing_content_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/css/pairing_content_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/pairing_content_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/pairing_content_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712085322786</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="docs: Update progress">
+      <option name="closed" value="true" />
+      <created>1712088447160</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1712088447160</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +285,8 @@
     <MESSAGE value="feat: Simple Pairing Checking page is done." />
     <MESSAGE value="docs: Making new comment about dynamic content" />
     <MESSAGE value="feat: Making simple outline of match_result_report_page&#10;&#10;All necessary HTML element are included.&#10;But need .js to support their features." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Making simple outline of match_result_report_page&#10;&#10;All necessary HTML element are included.&#10;But need .js to support their features." />
+    <MESSAGE value="docs: Update progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: Update progress" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Turbo_TCG_codes$crawl_from_PTCG.coverage" NAME="crawl_from_PTCG Coverage Results" MODIFIED="1709403780000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawl_from_PTCG" />
