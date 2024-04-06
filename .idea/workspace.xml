@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="Create new file">
-      <change afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/JavaScript/pairing_content_page.js" afterDir="false" />
+    <list default="true" id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/JavaScript/match_result_report_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/JavaScript/match_result_report_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/match_result_report_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/match_result_report_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_report_website/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +106,7 @@
       <workItem from="1709403233402" duration="7135000" />
       <workItem from="1712082806438" duration="258000" />
       <workItem from="1712083074494" duration="4422000" />
-      <workItem from="1712122812594" duration="5217000" />
+      <workItem from="1712122812594" duration="5367000" />
     </task>
     <task id="LOCAL-00001" summary="Set path for .csv file at user Downloads">
       <option name="closed" value="true" />
@@ -264,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712088447160</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat(Window alert of handing in select value.): &#10;&#10;At least .js code can receive the select bar value.">
+      <option name="closed" value="true" />
+      <created>1712134797123</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1712134797123</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,13 +290,14 @@
     <MESSAGE value="Rename Headings of the .md" />
     <MESSAGE value="Update new feature requirement." />
     <MESSAGE value="Update content" />
-    <MESSAGE value="Create new file" />
     <MESSAGE value="style: Rename folders." />
     <MESSAGE value="feat: Simple Pairing Checking page is done." />
     <MESSAGE value="docs: Making new comment about dynamic content" />
     <MESSAGE value="feat: Making simple outline of match_result_report_page&#10;&#10;All necessary HTML element are included.&#10;But need .js to support their features." />
     <MESSAGE value="docs: Update progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: Update progress" />
+    <MESSAGE value="Create new file" />
+    <MESSAGE value="feat(Window alert of handing in select value.): &#10;&#10;At least .js code can receive the select bar value." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Window alert of handing in select value.): &#10;&#10;At least .js code can receive the select bar value." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Turbo_TCG_codes$crawl_from_PTCG.coverage" NAME="crawl_from_PTCG Coverage Results" MODIFIED="1709403780000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawl_from_PTCG" />
