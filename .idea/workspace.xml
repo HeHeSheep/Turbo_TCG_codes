@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="">
+    <list default="true" id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="Starting to design.">
+      <change afterPath="$PROJECT_DIR$/result_report_website/Backend Design/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,9 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="PTCG_crawl_improve_for_Yeung" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,7 +71,6 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
     "Python.crawl_from_PTCG.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -84,14 +82,16 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "settings.editor.selected.configurable": "preferences.customizations",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\HeHeSheep\WebstormProjects\Turbo_TCG_codes\result_report_website\Frontend_Design\css" />
-    </key>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,9 +104,7 @@
       <workItem from="1709315038171" duration="7929000" />
       <workItem from="1709328619814" duration="645000" />
       <workItem from="1709403233402" duration="7135000" />
-      <workItem from="1712082806438" duration="258000" />
-      <workItem from="1712083074494" duration="4422000" />
-      <workItem from="1712122812594" duration="5367000" />
+      <workItem from="1713092309643" duration="1786000" />
     </task>
     <task id="LOCAL-00001" summary="Set path for .csv file at user Downloads">
       <option name="closed" value="true" />
@@ -228,47 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712081884100</updated>
     </task>
-    <task id="LOCAL-00016" summary="style: Rename folders.">
+    <task id="LOCAL-00016" summary="Starting to design.">
       <option name="closed" value="true" />
-      <created>1712083128596</created>
+      <created>1712082365904</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1712083128596</updated>
+      <updated>1712082365904</updated>
     </task>
-    <task id="LOCAL-00017" summary="feat: Simple Pairing Checking page is done.">
-      <option name="closed" value="true" />
-      <created>1712084839560</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1712084839560</updated>
-    </task>
-    <task id="LOCAL-00018" summary="docs: Making new comment about dynamic content">
-      <option name="closed" value="true" />
-      <created>1712085322786</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1712085322786</updated>
-    </task>
-    <task id="LOCAL-00019" summary="docs: Update progress">
-      <option name="closed" value="true" />
-      <created>1712088447160</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1712088447160</updated>
-    </task>
-    <task id="LOCAL-00020" summary="feat(Window alert of handing in select value.): &#10;&#10;At least .js code can receive the select bar value.">
-      <option name="closed" value="true" />
-      <created>1712134797123</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1712134797123</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,14 +256,9 @@
     <MESSAGE value="Rename Headings of the .md" />
     <MESSAGE value="Update new feature requirement." />
     <MESSAGE value="Update content" />
-    <MESSAGE value="style: Rename folders." />
-    <MESSAGE value="feat: Simple Pairing Checking page is done." />
-    <MESSAGE value="docs: Making new comment about dynamic content" />
-    <MESSAGE value="feat: Making simple outline of match_result_report_page&#10;&#10;All necessary HTML element are included.&#10;But need .js to support their features." />
-    <MESSAGE value="docs: Update progress" />
     <MESSAGE value="Create new file" />
-    <MESSAGE value="feat(Window alert of handing in select value.): &#10;&#10;At least .js code can receive the select bar value." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(Window alert of handing in select value.): &#10;&#10;At least .js code can receive the select bar value." />
+    <MESSAGE value="Starting to design." />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting to design." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Turbo_TCG_codes$crawl_from_PTCG.coverage" NAME="crawl_from_PTCG Coverage Results" MODIFIED="1709403780000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawl_from_PTCG" />
