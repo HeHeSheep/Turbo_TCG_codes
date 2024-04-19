@@ -18,5 +18,13 @@ Step 4,
 No worry, GitHub Copilot will go through whole project ga la
 
 --------------------------------------------------------------
-Use GitHub 
-Using AWS 
+Use GitHub as code respiratory <br>
+(After basic coding, I will create another GitHub respiratory to store codes)<br>
+(as AWS Amplify only fetch index.html at the most top of directory)<br>
+(At least under my research, I didn't found a way to change root directory of AWS Amplify))<br>
+
+Using AWS Amplify for web hosting<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Support a web link in "ugly" form. 
+&nbsp;&nbsp;&nbsp;&nbsp;- Enough to use if only use for report match result<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- As planning providing QR code to scan on big screen instead of enter URL by players<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 
