@@ -16,3 +16,7 @@ Step 3, use JavaScript to link Front End and BackEnd server
 Step 4, 
 
 No worry, GitHub Copilot will go through whole project ga la
+
+--------------------------------------------------------------
+Use GitHub 
+Using AWS 
