@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="docs: Update progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/JavaScript/match_result_report_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/JavaScript/match_result_report_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/pairing_content_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/pairing_content_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +107,7 @@
       <workItem from="1709403233402" duration="7135000" />
       <workItem from="1712082806438" duration="258000" />
       <workItem from="1712083074494" duration="4422000" />
+      <workItem from="1713809041315" duration="787000" />
     </task>
     <task id="LOCAL-00001" summary="Set path for .csv file at user Downloads">
       <option name="closed" value="true" />
