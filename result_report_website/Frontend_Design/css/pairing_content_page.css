@@ -18,6 +18,7 @@ table{
     width: 100%;
     height: auto;
     border: orange;
+    border-collapse: collapse;
 }
 
 td {
@@ -29,4 +30,20 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.player_name{
+    color: black;
+    text-decoration: none;
+}
+
+.player_name, .player_name:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.table_index{
+    overflow-y: auto;
+    height: 100px;
+    font-weight: bold;
 }

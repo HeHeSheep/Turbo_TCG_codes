@@ -2,17 +2,18 @@
 <head>
     <title>Pairing Content Page</title>
     <link rel="stylesheet" type="text/css" href="css/pairing_content_page.css">
+    <script src="JavaScript/pairing_content_page.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>Pairing Content<br></h1>
             <h1>Round 2</h1>
-            <div id="qrcode"></div>
+            <button type="button" onclick="show_this_page_qrcode(window.location.href)">Show QR Code</button>
         </div>
         <div class="content_table">
             <table>
-                <tr>
+                <tr class="table_index">
                     <td>Table No.</td>
                     <td>Player 1 Name</td>
                     <td>P1 Scores</td>
@@ -23,9 +24,9 @@
         <!--Require coop with JavaScript-->
                 <tr>
                     <td>T1</td>
-                    <td>test_001</td>
+                    <td><a href="match_result_report_page.html" class="player_name">test_001</a></td>
                     <td>3</td>
-                    <td>test_002</td>
+                    <td><a href="" class="player_name">test_002</a></td>
                     <td>3</td>
                 </tr>
                 <tr>
@@ -47,6 +48,251 @@
                     <td>test_007</td>
                     <td>0</td>
                     <td>test_008</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Dummy</td>
+                    <td>Dummy</td>
+                    <td>0</td>
+                    <td>Dummy</td>
                     <td>0</td>
                 </tr>
             </table>
