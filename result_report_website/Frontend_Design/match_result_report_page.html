@@ -8,14 +8,16 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Result Upload of Table 1</h1>
+            <h1 id = "header">Result Upload of Table error</h1>
         </div>
     </div>
     <div class="content">
         <table>
             <tr>
+                <td id = "roundNo">Round No.: error</td>
+                <td id = "tableNo">Table No.: error</td>
 <!--                Report PLayer Name-->
-                <td>Player Name: test001</td>
+                <td id="playerName">Player Name: error</td>
             </tr>
             <tr>
                 <td>
@@ -35,8 +37,8 @@
                 </td>
             </tr>
             <tr>
-<!--                Prepare some spaces for displaying submission
- result-->
+                <!-- Prepare some spaces for displaying submission result-->
+                <!-- Or when result submitted, show another template? -->
                 <td>
                     <br>
                     <br>
@@ -45,7 +47,7 @@
             <tr>
 <!--                Opponent PLayer Name-->
                 <td>
-                    Opponent Player Name: test002
+                    Opponent Player Name: test002 <!-- TODO: Later when dynamic webpage is designed, try to show it with a variable -->
                 </td>
             </tr>
         </table>

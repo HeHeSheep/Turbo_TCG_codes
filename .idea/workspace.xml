@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="feat(Adding default data to submit button):">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/QRCode_test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Turbo_TCG_codes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Turbo_TCG_codes.iml" afterDir="false" />
+    <list default="true" id="4eee0664-b3b1-4f84-9311-5c10fde58171" name="Changes" comment="Trying to show QR code on screen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/JavaScript/pairing_content_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/JavaScript/pairing_content_page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/css/pairing_content_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/css/pairing_content_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/pairing_content_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/pairing_content_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/JavaScript/match_result_report_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/JavaScript/match_result_report_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/css/match_result_report_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/css/match_result_report_page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_report_website/Frontend_Design/match_result_report_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/result_report_website/Frontend_Design/match_result_report_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,17 +84,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.customizations",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.HTML",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -112,6 +102,12 @@
       <workItem from="1713092309643" duration="1786000" />
       <workItem from="1713521576474" duration="1044000" />
       <workItem from="1713770809482" duration="12000" />
+      <workItem from="1713854365223" duration="1937000" />
+      <workItem from="1715739478031" duration="599000" />
+      <workItem from="1715967849376" duration="576000" />
+      <workItem from="1716830694510" duration="1459000" />
+      <workItem from="1718305045714" duration="57000" />
+      <workItem from="1722006876846" duration="7819000" />
     </task>
     <task id="LOCAL-00001" summary="Set path for .csv file at user Downloads">
       <option name="closed" value="true" />
@@ -241,11 +237,30 @@
       <option name="project" value="LOCAL" />
       <updated>1712082365904</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Trying to show QR code on screen">
+      <option name="closed" value="true" />
+      <created>1713871139060</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713871139060</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -265,7 +280,8 @@
     <MESSAGE value="Update content" />
     <MESSAGE value="Create new file" />
     <MESSAGE value="Starting to design." />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting to design." />
+    <MESSAGE value="Trying to show QR code on screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to show QR code on screen" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Turbo_TCG_codes$crawl_from_PTCG.coverage" NAME="crawl_from_PTCG Coverage Results" MODIFIED="1709403780000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawl_from_PTCG" />
